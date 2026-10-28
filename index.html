@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lio — an organic typeface by Lidia &amp; Oli</title>
+    <meta
+      name="description"
+      content="Lio is an organic typeface by Lidia and Oli, inspired by Antoni Gaudí and Catalan Modernisme. Every letter grows from one line: up like sky, along like grass, down like roots."
+    />
+    <meta name="theme-color" content="#f4f0e8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14130f" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Lio — an organic typeface" />
+    <meta property="og:description" content="Letters that grow like architecture. A typeface by Lidia & Oli." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preload" href="/fonts/lio-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <!-- Blocking on purpose: sets the theme before first paint. External so the CSP needs no inline scripts. -->
+    <script src="/theme-init.js"></script>
+    <meta property="og:url" content="https://lio.oli.zone/" />
+    <link rel="canonical" href="https://lio.oli.zone/" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="#top" aria-label="Lio, back to top">
+          <span class="lio brand__glyphs" aria-hidden="true">lio</span>
+        </a>
+        <nav class="site-nav" aria-label="Sections">
+          <ul>
+            <li><a href="#directions">Directions</a></li>
+            <li><a href="#alphabet">Alphabet</a></li>
+            <li><a href="#origins">Origins</a></li>
+            <li><a href="#sound">Sound</a></li>
+            <li><a href="#poems">Poems</a></li>
+          </ul>
+        </nav>
+        <div class="site-header__actions">
+          <button class="icon-button" type="button" data-theme-toggle aria-label="Switch colour theme">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+          </button>
+          <a class="button button--small" href="#write">Write in Lio</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__meta">
+            <span>An organic typeface</span>
+            <p class="credit">
+              Lio typeface designed by
+              <a href="https://readymag.website/u2387761754/6118787/" target="_blank" rel="noopener noreferrer">Lidia</a> &amp;
+              <a href="https://oli.zone" target="_blank" rel="noopener noreferrer">Oli</a>
+            </p>
+          </div>
+
+          <div class="hero__specimen" data-hero-specimen>
+            <p class="lio" lang="en">every letter</p>
+            <p class="lio" lang="en">grows from</p>
+            <p class="lio" lang="en">one line</p>
+          </div>
+
+          <div class="hero__intro">
+            <h1 id="hero-title" class="display">
+              Letters that grow <em>like architecture.</em>
+            </h1>
+            <div class="hero__body">
+              <p>
+                Lio is an organic typeface by Lidia and Oli. It takes its forms from Antoni Gaudí and Catalan
+                Modernisme: from leaves cast in iron, from arches found by hanging chains, from the broken tiles of
+                trencadís.
+              </p>
+              <p>
+                Every glyph grows from a single continuous thread, either up like the sky, along like grass, or down
+                like roots.
+              </p>
+              <div class="button-row">
+                <a class="button" href="#write">Write in Lio</a>
+                <a class="button button--ghost" href="#alphabet">See the alphabet</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 01 Directions -->
+      <section class="section" id="directions" aria-labelledby="directions-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">01 — Direction</p>
+            <h2 id="directions-title" class="display">Sky, grass, root</h2>
+            <p class="section__lede">
+              Every letter of the alphabet belongs to one of three directions. Together they decide where the line goes
+              next, so a word reads like a plant growing across the page.
+            </p>
+          </header>
+          <div class="directions" data-directions></div>
+          <figure class="sentence" data-reveal>
+            <p class="lio sentence__lio" data-sentence></p>
+            <figcaption class="sentence__caption">
+              <span data-sentence-reading></span>
+              <span class="legend" aria-label="Colour legend">
+                <span class="legend__item legend__item--sky">sky</span>
+                <span class="legend__item legend__item--grass">grass</span>
+                <span class="legend__item legend__item--root">root</span>
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 02 Alphabet -->
+      <section class="section section--tinted" id="alphabet" aria-labelledby="alphabet-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">02 — Alphabet</p>
+            <h2 id="alphabet-title" class="display">Twenty-six seeds</h2>
+            <p class="section__lede">
+              Lio is a lowercase alphabet. Each glyph meets its neighbours on a shared thread, so a word is drawn
+              without lifting the pen. Choose a letter to look at it closely.
+            </p>
+          </header>
+          <div class="alphabet" data-alphabet></div>
+        </div>
+      </section>
+
+      <!-- 03 Parameters -->
+      <section class="section" id="parameters" aria-labelledby="parameters-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">03 — Parameters</p>
+            <h2 id="parameters-title" class="display">Four rules, one line</h2>
+            <p class="section__lede">
+              The typeface began as a page of sketches and four questions. Every glyph answers all of them.
+            </p>
+          </header>
+          <ol class="parameters">
+            <li class="parameter" data-reveal>
+              <span class="parameter__num">01</span>
+              <h3>Direction</h3>
+              <p>Where does the letter grow? Up to the sky, along the grass or down to the root.</p>
+              <span class="lio parameter__sample" aria-hidden="true">dog</span>
+            </li>
+            <li class="parameter" data-reveal>
+              <span class="parameter__num">02</span>
+              <h3>Structure</h3>
+              <p>A horizontal thread runs through every glyph, the stem that each form grows from.</p>
+              <span class="lio parameter__sample" aria-hidden="true">stem</span>
+            </li>
+            <li class="parameter" data-reveal>
+              <span class="parameter__num">03</span>
+              <h3>Complexity</h3>
+              <p>A handful of shapes (bud, leaf, thorn, tendril) repeated and varied, like ornament.</p>
+              <span class="lio parameter__sample" aria-hidden="true">leaf</span>
+            </li>
+            <li class="parameter" data-reveal>
+              <span class="parameter__num">04</span>
+              <h3>Terminal</h3>
+              <p>Strokes never end bluntly. They taper and curl the way a tendril does.</p>
+              <span class="lio parameter__sample" aria-hidden="true">curl</span>
+            </li>
+          </ol>
+          <p class="parameters__result" data-reveal>
+            <span aria-hidden="true">↓</span>
+            <span>Continuity</span>
+            <span>Growth</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 04 Origins -->
+      <section class="section section--tinted" id="origins" aria-labelledby="origins-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">04 — Origins</p>
+            <h2 id="origins-title" class="display">Structure becomes letter</h2>
+            <p class="section__lede">
+              Catalan Modernisme treated structure as ornament and ornament as structure. Gaudí found his geometry in
+              trees, bones and shells, and the poets of the time wrote the land, the sea and the light into the
+              language. Lio borrows the same habit. Here is each building next to the letters it became.
+            </p>
+          </header>
+          <div class="origins" data-origins></div>
+        </div>
+      </section>
+
+      <!-- 05 Sound -->
+      <section class="section" id="sound" aria-labelledby="sound-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">05 — Sound</p>
+            <h2 id="sound-title" class="display">Letters you can hear</h2>
+            <p class="section__lede">
+              Read from left to right, every Lio glyph behaves like a sound wave: a lens swells and fades, a hook is a
+              gust that turns back, a thorn is the instant of an impact, a fork is a split. Each letter is paired with
+              a natural sound made of its own material. Sky letters are air, grass letters are water, leaves and
+              seeds, and root letters are stone, earth and wood. Press any letter to hear it.
+            </p>
+          </header>
+          <div class="sounds" data-sounds></div>
+        </div>
+      </section>
+
+      <!-- 06 Poems -->
+      <section class="section section--tinted" id="poems" aria-labelledby="poems-title">
+        <div class="container">
+          <header class="section__head section__head--split" data-reveal>
+            <div>
+              <p class="section__index">06 — Poems</p>
+              <h2 id="poems-title" class="display">Written to be grown</h2>
+              <p class="section__lede">
+                Short poems written for Lio, using only the letters it knows. Hover over or focus a line to read it, or
+                show every reading at once.
+              </p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" data-poem-readings />
+              <span class="switch__track" aria-hidden="true"></span>
+              <span>Show readings</span>
+            </label>
+          </header>
+          <div class="poems" data-poems></div>
+        </div>
+      </section>
+
+      <!-- 07 Write -->
+      <section class="section section--ink" id="write" aria-labelledby="write-title">
+        <div class="container">
+          <header class="section__head" data-reveal>
+            <p class="section__index">07 — Write</p>
+            <h2 id="write-title" class="display">Grow your own words</h2>
+            <p class="section__lede">
+              Type anything. Lio folds accents into their base letters (à, ç, ñ) and keeps a–z, spaces and line breaks.
+            </p>
+          </header>
+          <div class="studio" data-studio></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="lio site-footer__mark" aria-hidden="true">lio</p>
+        <div class="site-footer__grid">
+          <p class="credit">
+            Lio typeface designed by
+            <a href="https://readymag.website/u2387761754/6118787/" target="_blank" rel="noopener noreferrer">Lidia</a> &amp;
+            <a href="https://oli.zone" target="_blank" rel="noopener noreferrer">Oli</a>.
+          </p>
+          <p>Inspired by Antoni Gaudí and Catalan Modernisme.</p>
+          <p>Set in Lio, Instrument Sans and Instrument Serif.</p>
+          <a href="#top">Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

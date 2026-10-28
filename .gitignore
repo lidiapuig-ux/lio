@@ -1,0 +1,11 @@
+node_modules
+dist
+.DS_Store
+*.local
+.wrangler
+export
+
+# Local tooling, never published
+.claude
+.dev.vars
+.env*

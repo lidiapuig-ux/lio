@@ -1,0 +1,96 @@
+/*
+ * Design tokens.
+ * Raw palette first (stone, ink and the three growth colours), then semantic
+ * tokens that components use. Sections can re-map the semantic layer
+ * (see .section--ink) and every component follows.
+ */
+
+:root {
+  /* Palette: sandstone, iron ink, Mediterranean sky, trencadís green, terracotta root */
+  --paper: #f4f0e8;
+  --paper-2: #ece5d8;
+  --paper-3: #ddd2bf;
+  --ink: #1a1813;
+  --ink-2: #57524a;
+  --ink-3: #8a8378;
+  --sky: #2f64a3;
+  --grass: #3f7a3d;
+  --root: #b24a28;
+  --sand: #dcc6a2;
+  --sand-strong: #c8a674;
+
+  /* Semantic */
+  --bg: var(--paper);
+  --fg: var(--ink);
+  --fg-muted: var(--ink-2);
+  --fg-subtle: var(--ink-3);
+  --surface: #fbf8f2;
+  --surface-2: var(--paper-2);
+  --surface-3: var(--paper-3);
+  --line: color-mix(in oklab, var(--fg) 14%, transparent);
+  --line-strong: color-mix(in oklab, var(--fg) 30%, transparent);
+  --focus: var(--sky);
+
+  /* Type */
+  --font-sans: 'Instrument Sans Variable', 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-serif: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --font-lio: 'Lio', var(--font-sans);
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.75rem);
+
+  /* Space & shape */
+  --gutter: clamp(16px, 4vw, 48px);
+  --container: 1240px;
+  --section-space: clamp(88px, 6rem + 6vw, 176px);
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ease-grow: cubic-bezier(0.65, 0, 0.2, 1);
+  --duration: 220ms;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --sky: #8db4e2;
+    --grass: #98c47c;
+    --root: #ec8f68;
+    --sand: #6b5a40;
+    --sand-strong: #8a7350;
+
+    --bg: #14130f;
+    --fg: #efe9dd;
+    --fg-muted: #b9b1a3;
+    --fg-subtle: #857e72;
+    --surface: #1c1a15;
+    --surface-2: #23211b;
+    --surface-3: #312e26;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --sky: #8db4e2;
+  --grass: #98c47c;
+  --root: #ec8f68;
+  --sand: #6b5a40;
+  --sand-strong: #8a7350;
+
+  --bg: #14130f;
+  --fg: #efe9dd;
+  --fg-muted: #b9b1a3;
+  --fg-subtle: #857e72;
+  --surface: #1c1a15;
+  --surface-2: #23211b;
+  --surface-3: #312e26;
+  color-scheme: dark;
+}
